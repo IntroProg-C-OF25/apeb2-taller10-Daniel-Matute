@@ -3,10 +3,9 @@
  * Crea un juego de tres en raya utilizando una matriz bidimensional de 3x3.
  * Permita a dos jugadores marcar sus movimientos alternativamente.
  * El juego debe verificar si alguno de los jugadores ha ganado o si hay un empate.
+ *
  * @author Daniel Matute
  */
-
-
 import java.util.Scanner;
 
 public class Ejercicio6 {
@@ -14,7 +13,7 @@ public class Ejercicio6 {
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
         char[][] tablero = new char[3][3];
-        boolean juegoActivo = true, victoria , empate;
+        boolean juegoActivo = true, victoria, empate;
         char jugadorActual = 'X';
         int filas, columna;
 
@@ -38,7 +37,6 @@ public class Ejercicio6 {
 
             // Solicitar movimiento del jugador
             System.out.printf("Turno del jugador '%c'. Ingrese la fila y columna (1-3):%n", jugadorActual);
-            
 
             while (true) {
                 System.out.print("Fila: ");
@@ -59,15 +57,15 @@ public class Ejercicio6 {
             // Verificar victoria
             victoria = false;
             for (int i = 0; i < 3; i++) {
-                if ((tablero[i][0] == jugadorActual && tablero[i][1] == jugadorActual && tablero[i][2] == jugadorActual) ||
-                    (tablero[0][i] == jugadorActual && tablero[1][i] == jugadorActual && tablero[2][i] == jugadorActual)) {
+                if ((tablero[i][0] == jugadorActual && tablero[i][1] == jugadorActual && tablero[i][2] == jugadorActual)
+                        || (tablero[0][i] == jugadorActual && tablero[1][i] == jugadorActual && tablero[2][i] == jugadorActual)) {
                     victoria = true;
                     break;
                 }
             }
-            if (!victoria && 
-                ((tablero[0][0] == jugadorActual && tablero[1][1] == jugadorActual && tablero[2][2] == jugadorActual) ||
-                 (tablero[0][2] == jugadorActual && tablero[1][1] == jugadorActual && tablero[2][0] == jugadorActual))) {
+            if (!victoria
+                    && ((tablero[0][0] == jugadorActual && tablero[1][1] == jugadorActual && tablero[2][2] == jugadorActual)
+                    || (tablero[0][2] == jugadorActual && tablero[1][1] == jugadorActual && tablero[2][0] == jugadorActual))) {
                 victoria = true;
             }
 
@@ -93,7 +91,9 @@ public class Ejercicio6 {
                         break;
                     }
                 }
-                if (!empate) break;
+                if (!empate) {
+                    break;
+                }
             }
 
             if (empate) {

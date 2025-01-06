@@ -28,14 +28,13 @@ public class Ejercicio4 {
             System.out.println("6. Salir");
             System.out.print("Seleccione una opción: ");
 
-            
             if (!tcl.hasNextInt()) {
                 System.out.println("Por favor, ingrese un número válido.");
-                tcl.nextLine(); 
+                tcl.nextLine();
                 continue;
             }
             opcion = tcl.nextInt();
-            tcl.nextLine(); 
+            tcl.nextLine();
 
             switch (opcion) {
                 case 1: // Agregar nuevo producto

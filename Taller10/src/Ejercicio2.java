@@ -1,13 +1,12 @@
 
-
 /**
- * Dadas dos matrices (cuadradas y/o rectangulares) de valores enteros aleatorios, 
+ * Dadas dos matrices (cuadradas y/o rectangulares) de valores enteros aleatorios,
  * desarrollar su procesamiento para calcular y presentar:
  * La suma de las dos matrices (considerar las restricciones matemáticas para ello).
  * La multiplicación de las dos matrices (considerar las reglas matemáticas para ello).
+ *
  * @author Daniel Matute
  */
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -16,13 +15,13 @@ public class Ejercicio2 {
     public static void main(String[] args) {
         Scanner tcl = new Scanner(System.in);
         Random random = new Random();
-        int filas,columnas,columnasB;
+        int filas, columnas, columnasB;
 
         System.out.print("Ingrese el numero de filas de las matrices: ");
         filas = tcl.nextInt();
 
         System.out.print("Ingrese el numero de columnas de las matrices: ");
-         columnas = tcl.nextInt();
+        columnas = tcl.nextInt();
 
         System.out.print("Ingrese el numero de columnas de la segunda matriz (para multiplicación): ");
         columnasB = tcl.nextInt();
@@ -128,4 +127,4 @@ Multiplicaci�n de Matrices (A x B):
  62  56  55 
  32   8  31 
 BUILD SUCCESSFUL (total time: 4 seconds)
-*/
+ */

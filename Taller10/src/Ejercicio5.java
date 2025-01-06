@@ -19,8 +19,8 @@ public class Ejercicio5 {
         // Configuración inicial del inventario
         int max_productos = 100; // Capacidad máxima del inventario
         String[][] inventario = new String[max_productos][3];
-        int numProductos = 0, opcion, codigo,indiceProducto,cantidadDeseada,cantidadDisponible;
-        double IVA = 0.15, DESCUENTO = 0.10,precioUnitario,subtotal,impuestoIVA,descuento,total;
+        int numProductos = 0, opcion, codigo, indiceProducto, cantidadDeseada, cantidadDisponible;
+        double IVA = 0.15, DESCUENTO = 0.10, precioUnitario, subtotal, impuestoIVA, descuento, total;
         String nombre, precio, cantidad;
 
         while (true) {
